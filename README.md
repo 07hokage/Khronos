@@ -54,6 +54,11 @@ An overview of Khronos is available on [YouTube](https://www.youtube.com/watch?v
 
 # Setup
 ## Installation
+Make a conda environment
+```bash
+conda create -n khronos python==3.9
+conda actiavte khronos
+```
 Setup a catkin workspace:
 ```bash
 sudo apt install python3-catkin-tools python3-vcstool python3-tk
