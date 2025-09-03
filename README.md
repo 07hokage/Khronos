@@ -83,8 +83,7 @@ git clone https://github.com/07hokage/Khronos.git
 mv Khronos khronos
 # Use `https.rosinstall` if you do not have ssh key setup with github.com.
 vcs import . < khronos/install/https.rosinstall
-cd khronos
-rm -rf Pangolin
+rm -rf pangolin
 git clone --branch v0.9 --depth 1 https://github.com/stevenlovegrove/Pangolin.git
 cd ../..
 ```
