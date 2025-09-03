@@ -62,8 +62,8 @@ conda actiavte khronos
 Setup a catkin workspace:
 ```bash
 sudo apt install python3-catkin-tools python3-vcstool python3-tk
-mkdir -p ~/catkin_ws/src
-cd ~/catkin_ws
+mkdir -p catkin_ws/src
+cd ~catkin_ws
 catkin init
 catkin config --extend /opt/ros/$ROS_DISTRO
 catkin config --cmake-args -DCMAKE_BUILD_TYPE=RelWithDebInfo -DKIMERA_VERIFY_GTSAM_CONFIG=OFF -DOPENGV_BUILD_WITH_MARCH_NATIVE=OFF
@@ -78,7 +78,7 @@ pip install transforms3d empy==3.3.4 pyyaml defusedxml catkin_pkg rospkg lxml op
 
 Get Khronos and all source dependencies:
 ```bash
-cd ~/catkin_ws/src
+cd ~catkin_ws/src
 git clone https://github.com/07hokage/Khronos.git
 mv Khronos khronos
 # Use `https.rosinstall` if you do not have ssh key setup with github.com.
