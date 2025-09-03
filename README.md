@@ -86,7 +86,7 @@ vcs import . < khronos/install/https.rosinstall
 cd khronos
 rm -rf Pangolin
 git clone --branch v0.9 --depth 1 https://github.com/stevenlovegrove/Pangolin.git
-cd ..
+cd ../..
 ```
 
 Build:
