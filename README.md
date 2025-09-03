@@ -68,14 +68,20 @@ catkin config --merge-devel
 Install system dependencies:
 ```bash
 sudo apt install ros-$ROS_DISTRO-gtsam libgoogle-glog-dev nlohmann-json3-dev
+pip install transforms3d empy==3.3.4 pyyaml defusedxml catkin_pkg rospkg lxml opencv-python numpy==1.26.4
 ```
 
 Get Khronos and all source dependencies:
 ```bash
 cd ~/catkin_ws/src
-git clone git@github.com:MIT-SPARK/Khronos.git khronos
+git clone https://github.com/07hokage/Khronos.git
+mv Khronos khronos
 # Use `https.rosinstall` if you do not have ssh key setup with github.com.
-vcs import . < khronos/install/ssh.rosinstall
+vcs import . < khronos/install/https.rosinstall
+cd khronos
+rm -rf Pangolin
+git clone --branch v0.9 --depth 1 https://github.com/stevenlovegrove/Pangolin.git
+cd ..
 ```
 
 Build:
